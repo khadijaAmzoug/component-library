@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  background-color: white;
+  font-family: sans-serif;
+  
+}
+
+.App {
+  min-height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  color: black;
+}
+
+.alert-box {
+  max-width: 400px;
+  padding: 1rem;
+  border-left: 4px solid;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+
+.alert-success {
+  background-color: #e6fffa;
+  border-color: #38b2ac;
+  color: #234e52;
+}
+
+.alert-error {
+  background-color: #fed7d7;
+  border-color: #f56565;
+  color: #742a2a;
+}
+
+.alert-warning {
+  background-color: #fefcbf;
+  border-color: #ecc94b;
+  color: #744210;
+}
+
+.alert-info {
+  background-color: #bee3f8;
+  border-color: #3182ce;
+  color: #2c5282;
+}
