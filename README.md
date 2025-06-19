@@ -25,6 +25,7 @@ This project was created using **Vite** with the React + TypeScript template.
 ```bash
 npm install
 npm run dev
+```
 
 ### Folder Structure
 src/
@@ -46,6 +47,7 @@ src/
 Displays alert messages with different types (success, error, warning, info) and supports optional close functionality.
 
 ### Props:
+
 type AlertType = 'success' | 'error' | 'warning' | 'info';
 
 interface AlertBoxProps {
@@ -67,7 +69,7 @@ interface AlertBoxProps {
 # 2. UserProfileCard
 Displays user profile details with configurable email/role visibility and an edit button.
 ###Props:
-
+```ts
 interface User {
   id: string;
   name: string;
@@ -83,9 +85,9 @@ interface UserProfileCardProps {
   onEdit?: (userId: string) => void;
   children?: React.ReactNode;
 }
-
+```
 #Exemple 
-
+```ts
 <UserProfileCard
   user={user}
   showEmail={true}
@@ -94,13 +96,14 @@ interface UserProfileCardProps {
 >
   <div className="text-sm text-gray-500">Last login: 2 hours ago</div>
 </UserProfileCard>
+```
 
 #3.  ProductDisplay
 
 Displays product information like name, price, stock status, and description, with an "Add to Cart" feature.
 
 ###Props:
-
+```ts
 interface Product {
   id: string;
   name: string;
@@ -117,9 +120,11 @@ interface ProductDisplayProps {
   onAddToCart?: (productId: string) => void;
   children?: React.ReactNode;
 }
+```
 
 ###Exemple:
 
+```ts
 <ProductDisplay
   product={product}
   showDescription={true}
@@ -128,9 +133,11 @@ interface ProductDisplayProps {
 >
   <div className="text-sm text-gray-500">Free shipping available</div>
 </ProductDisplay>
+```
 
 #Component Composition Example
 
+```ts
 <AlertBox
   type="success"
   message="Product added to cart!"
@@ -145,7 +152,7 @@ interface ProductDisplayProps {
   showStockStatus={true}
   onAddToCart={handleAddToCart}
 />
-
+```
 #Type Safety
 
 
